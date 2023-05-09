@@ -1,0 +1,396 @@
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia-Bold.eot');
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+		url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia-Bold.woff') format('woff'),
+		url('../fonts/Georgia-Bold.woff2') format('woff2'),
+		url('../fonts/Georgia-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia.eot');
+	src: local('Georgia'),
+		url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia.woff') format('woff'),
+		url('../fonts/Georgia.woff2') format('woff2'),
+		url('../fonts/Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Semibold.eot');
+    src: local('Lato Semibold'), local('Lato-Semibold'),
+        url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Semibold.woff') format('woff'),
+        url('../fonts/Lato-Semibold.woff2') format('woff2'),
+        url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Medium.eot');
+    src: local('Lato Medium'), local('Lato-Medium'),
+        url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Medium.woff') format('woff'),
+        url('../fonts/Lato-Medium.woff2') format('woff2'),
+        url('../fonts/Lato-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Black';
+    src: url('../fonts/AvenirLT-Black.eot');
+    src: local('Avenir LT 95 Black'), local('AvenirLT-Black'),
+        url('../fonts/AvenirLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-Black.woff') format('woff'),
+        url('../fonts/AvenirLT-Black.woff2') format('woff2'),
+        url('../fonts/AvenirLT-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #424242;
+}
+a{
+    text-decoration: none; /* Уберает подчеркивание под ссылкой */
+    color: inherit; /* Цвет наследуется от родительского класса */
+}
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Блок header */
+.header {
+    background-image: url('../images/header-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 92px;
+    height: calc(100vh - 92px);
+    position: relative;
+}
+.header__top {
+    padding: 17px 0;
+    position: absolute;
+    top: -92px;
+    left: 0;
+    right: 0;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    gap: 70px;
+    line-height: 24px;
+    color: #292929;
+}
+.header__box {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.trial {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
+.headline {
+    padding-top: 175px;
+}
+.headline__inner {
+    max-width: 440px;
+}
+.headline__title {
+    font-family: 'Georgia';
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;
+    margin-bottom: 30px;
+}
+.headline__text {
+    max-width: 420px;
+    color: #484848;
+    margin-bottom: 18px;
+}
+.headline__link {
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
+/* Блок header */
+
+/* Блок works */
+.works {
+    padding: 170px 0 50px;
+    margin-bottom: 287px;
+}
+.works__description {
+    margin-bottom: 52px;
+}
+.works__description-subtitle {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+    color: #424242;
+}
+.works__description-box {
+    display: flex;
+    align-items: center;
+    gap: 136px;
+}
+.works__description-title {
+    flex-basis: 584px;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+
+}
+.works__description-text {
+    flex-basis: 671px;
+}
+.works__info {
+    display: flex;
+    gap: 95px;
+}
+.works__info-item {
+    position: relative;
+}
+.item-2 {
+    top: 287px;
+}
+.item-3 {
+    top: 54px;
+}
+.works__info-paragraph {
+    position: absolute;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+}
+.works__info-title {
+    padding-top: 135px;
+    margin-bottom: 55px;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+.works__info-text {
+    margin-bottom: 60px;
+}
+.works__info-img {
+    width: 390px;
+    object-fit: cover;
+}
+/* Блок works */
+
+/* Блок primary */
+.primary {
+    background: #245852;
+    padding: 229px 0 177px;
+    margin-bottom: 120px;
+}
+.primary__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.primary__info {
+    flex-basis: 580px;
+    color: #FFFFFF;
+}
+.primary__info-title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    margin-bottom: 33px;
+}
+.primary__info-text {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+    margin-bottom: 57px;
+}
+.primary__info-link {
+    line-height: 25px;
+    padding: 20px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
+.primary__popup {
+    flex-basis: 850px;
+    position: relative;
+}
+.primary__popup-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.primary__popup-img {
+    width: 100%;
+}
+/* Блок primary */
+
+/* Блок product */
+.product {
+    margin-bottom: 168px;
+}
+.product__inner {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+}
+.product__custom-inner {
+    padding: 0 0 75px 60px;
+    position: relative;
+}
+.product__custom-box {
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 22px 55px 30px 61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.product__custom-boxtitle {
+    display: inline-block;
+    font-size: 14.49px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 8px;
+    border-bottom: 0.745942px solid #000000;
+    margin-bottom: 14px;
+}
+.product__custom-boximg {
+    margin-bottom: 11px;
+}
+.product__custom-name {
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.product__custom-subtitle {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.product__custom-list {
+    font-size: 11px;
+    text-align: left;
+    color: #000000;
+}
+.product__custom-item:first-child {
+    margin-bottom: 16px;
+}
+.product__info-subtitle {
+    font-weight: 600;
+    font-size: 25px;
+    color: #424242;
+    margin-bottom: 10px;
+}
+.product__info-title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    color: #01996D;
+    margin-bottom: 20px;
+}
+.product__info-text {
+    margin-bottom: 40px;
+}
+.product__info-link {
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 20px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
+/* Блок product */
+
+/* Блок footer */
+.footer {
+    background: #245852;
+    padding: 95px 0 84px;
+}
+.footer__title {
+    font-family: 'Avenir Black';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+.footer__list {
+    list-style-type: none;
+}
+.footer__item {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+/* Блок footer */

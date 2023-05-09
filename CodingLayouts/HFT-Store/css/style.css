@@ -1,0 +1,404 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /* Уберает подчеркивание под ссылкой */
+    color: inherit; /* Цвет наследуется от родительского класса */
+}
+body{
+    background: #F0F9FF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #585C65;
+}
+.container{
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 1275px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.btn{
+    background: linear-gradient(98.3deg, #FFB443 -6.86%, #B213DA 195.79%);
+    color: #FFFFFF;
+}
+
+/* Блок header */
+.header{
+    background: linear-gradient(110.58deg, #3257DA 1.54%, #DF45EC 100%);
+    padding: 40px 0 77px;
+    margin-bottom: 56px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+}
+.menu__item{
+    color: #FFFFFF;
+}
+.menu__item + .menu__item{
+    margin-left: 70px;
+}
+
+.header__top{
+    margin-top: 54px;
+    position: relative;
+}
+.header__top-fon1,
+.header__top-fon2{
+    position: absolute;
+    object-fit: cover;
+}
+.header__top-fon1{
+    right: -90px;
+    top: 30px;
+}
+.header__top-fon2{
+    top: 90px;
+    right: -125px;
+}
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top-descr{
+    max-width: 550px;
+}
+.header__top-title{
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 81px;
+    letter-spacing: 0.01em;   
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.header__top-text{
+    max-width: 410px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 33px;
+}
+.header__top-link{
+    padding: 15px 52px;
+}
+.header__top-image{
+    margin-right: 40px;
+}
+.header__top-wrapper{
+    max-width: 437px;
+    max-height: 648px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    text-align: center;
+}
+.header__top-img{
+    padding: 19px;
+    margin-bottom: 15px;
+}
+.header__top-image-title{
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+.header__top-image-link{
+    display: inline-block;
+    padding: 15px 145px;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+/* Блок number */
+.number{
+    margin-bottom: 240px;
+}
+.number__inner{
+    max-width: 517px;
+    display: flex;
+    justify-content: space-between;
+}
+.number__column{
+    text-align: center;
+}
+.number__column-title{
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    background: linear-gradient(98.3deg, #FFB443 -6.86%, #B213DA 195.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.number__column-text{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 47px;
+    text-align: center;
+    color: #363A45;
+}
+
+/* Блок safe */
+.safe{
+    margin-bottom: 200px;
+}
+.safe__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.safe__box-image{
+    margin-left: -90px;
+}
+.safe__box-title{
+    width: 508px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+    color: #27292E;
+    margin-bottom: 26px;
+}
+.safe__box-text{
+    width: 473px;
+    margin-bottom: 50px;
+}
+.safe__box-link{
+    padding: 15px 40px;
+}
+
+/* Блок marketplace */
+.marketplace{
+    margin-bottom: 170px;
+}
+.marketplace__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.marketplace__title{
+    max-width: 361px;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.01em;
+    color: #27292E;
+}
+.marketplace__text{
+    max-width: 438px;
+}
+.marketplace__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.marketplace__items{
+    width: 360px;
+    background: #FFFFFF;
+}
+.marketplace__item{
+    height: 360px;
+    background: linear-gradient(162.03deg, #FFB443 -26.24%, #B213DA 121.12%);
+    margin-bottom: 30px;
+    padding: 25px;
+}
+.marketplace__items-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #34363B;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+.marketplace__items-finance{
+    display: flex;
+    justify-content: space-evenly;
+}
+.marketplace__items-column{
+    width: 145px;
+    padding: 20px;
+    border: 1px solid #F3E3EF;
+    margin-bottom: 35px;
+}
+.marketplace__items-column-name{
+    font-size: 13px;
+    line-height: 18px;
+    color: #27292E;
+    margin-bottom: 10px;
+}
+.marketplace__items-column-number{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #27292E;
+}
+.marketplace__items-user{
+    margin-left: 25px;
+    margin-bottom: 35px;
+}
+.marketplace__items-user-inner{
+    display: flex;
+    align-items: center;
+}
+.marketplace__items-user-img{
+    margin-right: 10px;
+    width: 53px;
+    height: 53px;
+}
+.marketplace__items-user-name{
+    font-size: 13px;
+    line-height: 18px;
+    color: #27292E;
+}
+.marketplace__items-user-login{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 31px;
+    color: #27292E;
+}
+.marketplace__items-link{
+    display: inline-block;
+    padding: 21px 108px;
+    margin: 0 25px 25px;
+}
+
+/* Блок guarantee */
+.guarantee{
+    margin-bottom: 150px;
+}
+.guarantee__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.guarantee__title{
+    max-width: 508px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+    color: #27292E;
+    margin-bottom: 26px;
+}
+.guarantee__text{
+    max-width: 473px;
+    margin-bottom: 50px;
+}
+.guarantee__link{
+    padding: 15px 40px;
+}.guarantee__img{
+    margin-right: -90px;
+}
+
+/* Блок subscription */
+.subscription{
+    margin-bottom: 105px;
+}
+.subscription__inner{
+    padding: 70px 213px 80px;
+    background: linear-gradient(110.58deg, #3257DA 1.54%, #DF45EC 100%);
+}
+.subscription__title{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.subscription__text{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+.subscription__form{
+    text-align: center;
+}
+.subscription__box{
+    position: relative;
+}
+.subscription__box::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/mail.svg');
+    background-size: 27px 27px;
+    width: 27px;
+    height: 27px;
+    top: 0;
+    left: 23px;
+}
+.subscription__input{
+    background: rgba(255, 255, 255, 0.15);
+    padding: 16px 0 16px 71px;
+    margin-right: 20px;
+    width: 468px;
+    border: none;
+    outline: none;
+}
+.subscription__input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.subscription__btn{
+    padding: 15px 44px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Блок footer */
+.footer{
+    margin-bottom: 106px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__label{
+    flex-basis: 341px;
+}
+.footer__label-img{
+    margin-bottom: 26px;
+}
+.footer__label-text{
+    margin-bottom: 41px;
+}
+.footer__label-link + .footer__label-link{
+    margin-left: 30px;
+}
+.footer__list{
+    flex-basis: 535px;
+}
+.footer__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__menu-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #40434A;
+    /* margin-bottom: 30px; */
+}
+.footer__menu-item{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #70737C;
+    margin-top: 24px;
+}
