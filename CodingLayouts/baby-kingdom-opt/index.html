@@ -1,0 +1,1097 @@
+<promhtml>
+  <meta content="width=device-width" name="viewport" />
+  <style type="text/css">
+    /* Обнулення */
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+    }
+
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    :focus,
+    :active {
+      outline: none;
+    }
+
+    a:focus,
+    a:active {
+      outline: none;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      font-size: 100%;
+      line-height: 1;
+      font-size: 14px;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    input,
+    button,
+    textarea {
+      font-weight: inherit;
+      font-size: inherit;
+      color: inherit;
+      font-family: inherit;
+    }
+
+    input::-ms-clear {
+      display: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    button::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    a,
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    img {
+      vertical-align: top;
+      max-width: 100%;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: 400;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    /* змінювати кольори відповідно до ваших потреб */
+    ins {
+      background-color: #ff9;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* змінювати кольори відповідно до ваших потреб */
+    mark {
+      background-color: #ff9;
+      color: #000;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    del {
+      text-decoration: line-through;
+    }
+
+    abbr[title],
+    dfn[title] {
+      border-bottom: 1px dotted;
+      cursor: help;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* змінити колір рамки відповідно до ваших потреб */
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #cccccc;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    input,
+    select {
+      vertical-align: middle;
+    }
+
+    /* ------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Philosopher:wght@700&display=swap');
+
+    body {
+      width: 100%;
+      max-width: 864px;
+      margin: 0 auto;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+      color: #323544;
+    }
+
+    a {
+      display: inline-block;
+      color: #323544;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Philosopher', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg, #905cff, #ab57f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+      max-width: 640px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    /* ===HEADER=== */
+    .header__inner {
+      position: relative;
+      z-index: 1;
+      background-image: url('img/header-bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 64px 0 133px;
+    }
+
+    .header__logo {
+      margin-bottom: 64px;
+    }
+
+    .header__title {
+      max-width: 265px;
+    }
+
+    .header__text {
+      padding-left: 21px;
+      position: relative;
+      max-width: 216px;
+      /* margin-bottom: 63px; */
+    }
+
+    .header__text::before {
+      position: absolute;
+      content: '';
+      width: 17px;
+      height: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-image: url('img/el1.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .categories__links {
+      display: block;
+      margin-left: auto;
+      width: 155px;
+      height: 61px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      padding: 14px 18px 18px 63px;
+      font-size: 12px;
+      position: relative;
+    }
+
+    .categories__links::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      top: 16px;
+      left: 20px;
+    }
+
+    .categories__links--header::before {
+      background-image: url('img/dress.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header__link {
+      width: 165px;
+      height: 49px;
+      border-radius: 24px;
+      filter: drop-shadow(0px 20px 27px rgba(189, 77, 247, 0.59));
+      background-color: #bd4df7;
+      padding: 16px 45px 20px 24px;
+      font-size: 12px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .header__link::after {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 22px;
+      background-image: url('img/arrow-right.svg');
+    }
+
+    /* ===HEADER=== */
+
+    /* ===ADVANTAGES=== */
+    .advantages__inner {
+      position: relative;
+      background-image: url('img/advantages-bg2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 110px 0 105px;
+    }
+
+    .advantages__left {
+      position: absolute;
+      top: -75px;
+      left: 0;
+      z-index: 2;
+
+    }
+
+    .advantages__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+      z-index: 3;
+    }
+
+    .advantages__title {
+      max-width: 275px;
+    }
+
+    .advantages__list {
+      max-width: 275px;
+    }
+
+    .advantages__list-title {
+      font-family: 'Philosopher', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #323544;
+      padding-left: 57px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .advantages__list-title--layer,
+    .advantages__list-title--wallet,
+    .advantages__list-title--support {
+      display: inline-block;
+      position: relative;
+      top: 35px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      filter: drop-shadow(0px 5px 14.5px rgba(0, 0, 0, 0.15));
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    .advantages__list-title--layer::before,
+    .advantages__list-title--wallet::before,
+    .advantages__list-title--support::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 28px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .advantages__list-title--layer::before {
+      background-image: url('img/layer.svg');
+    }
+
+    .advantages__list-title--wallet::before {
+      background-image: url('img/wallet.svg');
+    }
+
+    .advantages__list-title--support::before {
+      background-image: url('img/support.svg');
+    }
+
+    .categories__links--advantages {
+      margin-left: 0;
+      position: absolute;
+      z-index: 5;
+      bottom: 225px;
+    }
+
+    .categories__links--advantages::before {
+      background-image: url('img/santa-hat.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      top: -15px;
+      left: -15px;
+    }
+
+    /* ===ADVANTAGES=== */
+
+    /* ===SALES=== */
+    .sales {
+      padding: 100px 0;
+    }
+
+    .sales__title {
+      max-width: 446px;
+      margin-bottom: 60px;
+    }
+
+    /* .sales__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    } */
+    .sales__inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .sales__item {
+      width: 291px;
+      height: 291px;
+      border-radius: 15px;
+      background-color: #f7faff;
+      padding: 31px;
+      position: relative;
+    }
+
+    .sales__wrap {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sales__item-text {
+      max-width: 105px;
+    }
+
+    .sales__item-text1 {
+      max-width: 75px;
+      font-size: 12px;
+      background-image: linear-gradient(90deg, #905cff, #ab57f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sales__item-text2 {
+      max-width: 75px;
+    }
+
+    .sales__item-img1,
+    .sales__item-img2,
+    .sales__item-img3,
+    .sales__item-img4 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .sales__item-img1 {
+      right: -20px;
+      top: 15px;
+    }
+
+    .sales__item-img2 {
+      top: 10px;
+    }
+
+    .sales__item-img3 {
+      top: 10px;
+    }
+
+    .sales__item-img4 {
+      top: 10px;
+    }
+
+    .sales__item-link {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      filter: drop-shadow(0px 5px 14.5px rgba(0, 0, 0, 0.15));
+      background-color: #ffffff;
+    }
+
+    .sales__item-link::before {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('img/arrow-right-purple.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* ===SALES=== */
+
+    /* ===CONTACTS=== */
+    .contacts {
+      border-radius: 20px;
+      filter: drop-shadow(0px 15px 71px rgba(0, 0, 0, 0.2));
+      background-color: #ffffff;
+      padding: 58px 45px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contacts__wrapper,
+    .contacts__wrapper2 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .contacts__wrapper2 {
+      top: -225px;
+    }
+
+    .contacts__wrapper2::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      width: 116px;
+      height: 125px;
+      top: -45px;
+      left: 80px;
+      background-image: url('img/bat3.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contacts__wrapper::after {
+      position: absolute;
+      content: "";
+      width: 91px;
+      height: 97px;
+      top: 160px;
+      left: 75px;
+      background-image: url('img/bat1.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contacts__wrapper::before {
+      z-index: 5;
+      position: absolute;
+      content: "";
+      width: 53px;
+      height: 53px;
+      top: -20px;
+      right: 175px;
+      background-image: url('img/bat2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contacts__bg {
+      position: absolute;
+      right: -240px;
+      top: 120px;
+    }
+
+    .contacts__title {
+      margin-bottom: 10px;
+      font-size: 23px;
+    }
+
+    .contacts__text {
+      margin-bottom: 30px;
+    }
+
+    .contacts__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contacts__btn {
+      width: 183px;
+      height: 49px;
+      border-radius: 25px;
+      filter: drop-shadow(0px 20px 27px rgba(189, 77, 247, 0.59));
+      background-color: #bd4df7;
+      line-height: 50px;
+      font-size: 12px;
+      padding-left: 28px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .contacts__btn::after {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 22px;
+      background-image: url('img/arrow-right.svg');
+    }
+
+    .contacts__social-link {
+      width: 49px;
+      height: 49px;
+      border-radius: 25px;
+      background-color: #ffffff;
+      border: 1px solid #ededed;
+      position: relative;
+    }
+
+    .telegram,
+    .viber,
+    .whatsapp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .contacts__phone {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    /* ===CONTACTS=== */
+
+    /* ===WORK-SCHEME=== */
+    .work-scheme {
+      position: relative;
+    }
+
+    .work-scheme__wrapper {
+      background-image: url('img/work_scheme-bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px 0 0px;
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0;
+    }
+
+    .work-scheme__inner {
+      margin-top: 110px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .work-scheme__title {
+      max-width: 200px;
+      margin-bottom: 50px;
+    }
+
+    .work-scheme__list {
+      color: #fff;
+      padding-left: 50px;
+      counter-reset: item;
+      list-style-type: none;
+    }
+
+    .work-scheme__list .work-scheme__item::before {
+      position: absolute;
+      left: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      content: counter(item, decimal-leading-zero);
+      counter-increment: item;
+      background-color: #fff;
+      color: #ab57f6;
+    }
+
+    .work-scheme__item {
+      margin-bottom: 40px;
+    }
+
+    .work-scheme__text {
+      max-width: 235px;
+      padding-left: 15px;
+    }
+
+    .categories__links--work-scheme::before {
+      background-image: url('img/power.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .work-scheme__link {
+      width: 183px;
+      height: 49px;
+      border-radius: 25px;
+      filter: drop-shadow(0px 20px 27px rgba(189, 77, 247, 0.59));
+      background-color: #bd4df7;
+      line-height: 50px;
+      font-size: 12px;
+      padding-left: 28px;
+      color: #ffffff;
+      position: relative;
+      bottom: -25px;
+    }
+
+    .work-scheme__link::after {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 22px;
+      background-image: url('img/arrow-right.svg');
+    }
+
+    /* ===WORK-SCHEME=== */
+
+    /* ===HISTORY=== */
+    .history {
+      position: relative;
+      z-index: -1;
+      top: -110px;
+      text-align: center;
+      margin-top: 700px;
+      padding: 200px 0px 150px;
+      background-image: url('img/Прямокутник\ 4.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .history__title {
+      margin-bottom: 35px;
+    }
+
+    .history__text {
+      margin-bottom: 30px;
+    }
+
+    /* ===HISTORY=== */
+
+    /* ===ADV=== */
+    .adv {
+      text-align: center;
+      margin-top: -140px;
+      padding-bottom: 100px;
+    }
+
+    .adv__title {
+      margin-bottom: 75px;
+    }
+
+    .adv__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .adv__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .adv__block-img {
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      filter: drop-shadow(0px 5px 14.5px rgba(0, 0, 0, 0.15));
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .adv__text {
+      max-width: 110px;
+    }
+
+    /* ===ADV=== */
+
+    /* ===MEDIA=== */
+    @media (max-width: 860px) {
+      .work-scheme__wrapper {
+        position: relative;
+      }
+
+      .work-scheme__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .history {
+        margin-top: 0;
+      }
+
+      .work-scheme__list {
+        padding-left: 0;
+      }
+
+      .work-scheme__list .work-scheme__item::before {
+        position: relative;
+        left: 100px;
+        margin-bottom: 20px;
+      }
+
+      .advantages__left {
+        top: 0;
+        z-index: -1;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .advantages__list {
+        max-width: 230px;
+      }
+
+      .contacts__wrapper::after {
+        width: 0;
+        height: 0;
+      }
+
+      .contacts__wrapper::before {
+        width: 0;
+        height: 0;
+      }
+
+      .contacts__wrapper2::before {
+        width: 0;
+        height: 0;
+      }
+
+      .advantages__left {
+        display: none;
+      }
+
+      .advantages__right {
+        align-items: center;
+      }
+
+      .categories__links--advantages {
+        position: relative;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ===MEDIA=== */
+  </style>
+  <div class="body">
+
+    <div class="header">
+      <div class="header__inner">
+        <div class="container">
+          <img class="header__logo" src="img/header-logo.svg" alt="logo">
+          <h1 class="header__title">
+            Карнавальні костюми для дітей та дорослих за системою дропшипінг
+          </h1>
+          <p class="header__text">
+            Почніть вигідну співпрацю разом з нами
+          </p>
+          <a class="categories__links categories__links--header" href="#">Костюми <br> для дівчаток</a>
+          <a class="header__link" href="#">Залишити заявку</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="advantages__inner">
+        <div class="container">
+          <a class="categories__links categories__links--advantages" href="#">Костюми для дорослих</a>
+          <div class="advantages__left">
+            <img class="advantages__left-img" src="img/Шар 52.png" alt="">
+          </div>
+          <div class="advantages__right">
+            <h3 class="advantages__title">
+              Чому варто ОБРАТИ наш магазин для співпраці
+            </h3>
+            <dl class="advantages__list">
+              <span class="advantages__list-title--layer"></span>
+              <dt class="advantages__list-title">Якість</dt>
+              <dd class="advantages__list-text">У нас найкращі тканини від перевірених постачальників</dd>
+
+              <span class="advantages__list-title--wallet"></span>
+              <dt class="advantages__list-title">Доступна ціна</dt>
+              <dd class="advantages__list-text">В асортименті костюми на будь-який смак та гаманець</dd>
+
+              <span class="advantages__list-title--support"></span>
+              <dt class="advantages__list-title">Сервіс</dt>
+              <dd class="advantages__list-text">Ми завжди на зв'язку: допомагаємо з вибором та консультуємо по догляду
+                та
+                збереженню костюмів</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sales">
+      <div class="container">
+        <h3 class="sales__title">Асортимент товарів доступний для замовлення за системою дропшипінг</h3>
+        <div class="sales__inner">
+
+          <div class="sales__item">
+            <div class="sales__wrap">
+              <p class="sales__item-text">Карнавальні костюми для дорослих</p>
+              <a class="sales__item-link" href="#"></a>
+            </div>
+            <img class="sales__item-img1" src="img/sales_img-1.png" alt="sales__item">
+          </div>
+          <div class="sales__item">
+            <div class="sales__wrap">
+              <p class="sales__item-text">Карнавальні костюми для дівчаток</p>
+              <p class="sales__item-text2"><span class="sales__item-text1">Також пропонуємо:</span> <br> Аксесуари для
+                свята</p>
+              <a class="sales__item-link" href="#"></a>
+            </div>
+            <img class="sales__item-img2" src="img/sales_img-2.png" alt="sales__item">
+          </div>
+          <div class="sales__item">
+            <div class="sales__wrap">
+              <p class="sales__item-text">Костюми супергероїв для хлопчиків</p>
+              <a class="sales__item-link" href="#"></a>
+            </div>
+            <img class="sales__item-img3" src="img/sales_img-3.png" alt="sales__item">
+          </div>
+          <div class="sales__item">
+            <div class="sales__wrap">
+              <p class="sales__item-text">Святкові сукні за індивідуальним замовленням</p>
+              <a class="sales__item-link" href="#"></a>
+            </div>
+            <img class="sales__item-img4" src="img/sales_img-4.png" alt="sales__item">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts__wrapper">
+      <div class="container">
+        <div class="contacts">
+          <img class="contacts__bg" src="img/contacts-bg.png" alt="contacts-bg">
+          <h3 class="contacts__title">Бажаєте реалізовувати нашу продукцію за системою дропшипінг?</h3>
+          <p class="contacts__text">
+            Заповніть форму за посиланням або ж зв’яжіться з нами зручним для вас способом для обговорення деталей
+          </p>
+          <div class="contacts__inner">
+            <a class="contacts__btn" target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScs5ZR2WAcv22LxHKnZUUpyG0kIZw3fjGeKzPj0SL8dHiNkbg/viewform">Заповнити
+              форму</a>
+            <a class="contacts__social-link" href="#"><img class="telegram" src="img/telegram.png" alt="telegram"></a>
+            <a class="contacts__social-link" href="#"><img class="viber" src="img/viber.png" alt="viber"></a>
+            <a class="contacts__social-link" href="#"><img class="whatsapp" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a class="contacts__phone" href="tel:+380981884400">+380 (98) 188-44-00</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-scheme">
+      <div class="work-scheme__wrapper">
+        <div class="container">
+          <div class="work-scheme__inner">
+            <div class="work-scheme__left">
+              <h3 class="work-scheme__title">Як працюють дропшипери?</h3>
+              <ol class="work-scheme__list" type="01">
+                <li class="work-scheme__item">
+                  <p class="work-scheme__text">Покупець робить замовлення у вашому магазині</p>
+                </li>
+                <li class="work-scheme__item">
+                  <p class="work-scheme__text">Покупець вносить оплату за покупку на ваш рахунок</p>
+                </li>
+                <li class="work-scheme__item">
+                  <p class="work-scheme__text">Ви отримуєте відсоток від продажу і замовляєте товар на адресу покупця
+                  </p>
+                </li>
+                <li class="work-scheme__item">
+                  <p class="work-scheme__text">Ми опрацьовуємо замовлення, яке ви зробили та відправляємо його</p>
+                </li>
+                <li class="work-scheme__item">
+                  <p class="work-scheme__text">Покупець отримує замовлення за вказаною адресою та замовляє ще раз</p>
+                </li>
+              </ol>
+            </div>
+            <div class="work-scheme__right">
+              <a class="categories__links categories__links--work-scheme" href="#">Костюми для хлопчиків</a>
+            </div>
+          </div>
+          <a class="work-scheme__link" href="#">Почати співпрацю</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="history">
+      <div class="container">
+        <h3 class="history__title">Історія нашої компанії</h3>
+        <p class="history__text">
+          Усе почалося у 2013 році, коли ми з чоловіком вирішили зробити особливими Новорічні свята для наших
+          племінників і похресників. Але коли почали шукати такі костюми, які б викликали захоплення, ринок розчарував
+          нас. Тому ми вирішили не чекати, а створити їх самі. І з того моменту хобі перетворилося в родинний бізнес.
+          Так у нашому асортименті з'явилися карнавальні костюми Діда Мороза і Снігурки, Святого Миколая, Санта Клауса.
+          Наступним кроком стало виробництво чудових аксесуарів: кокошників, посохів, валянок та уг. З кожним роком ми
+          вдосконалюємо навички та технології виготовлення, тому вибір товарів постійно збільшується.
+        </p>
+        <p class="history__text">
+          На прохання покупців ми також пошиємо святкові та карнавальні сукні для дітей та дорослих, бо дуже любимо
+          допомагати створювати неповторні образи, які будуть унікальними та особливими.
+        </p>
+      </div>
+    </div>
+
+    <div class="contacts__wrapper2">
+      <div class="container">
+        <div class="contacts">
+          <img class="contacts__bg" src="img/contacts-bg.png" alt="contacts-bg">
+          <h3 class="contacts__title">Бажаєте реалізовувати нашу продукцію за системою дропшипінг?</h3>
+          <p class="contacts__text">
+            Заповніть форму за посиланням або ж зв’яжіться з нами зручним для вас способом для обговорення деталей
+          </p>
+          <div class="contacts__inner">
+            <a class="contacts__btn" target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScs5ZR2WAcv22LxHKnZUUpyG0kIZw3fjGeKzPj0SL8dHiNkbg/viewform">Заповнити
+              форму</a>
+            <a class="contacts__social-link" href="#"><img class="telegram" src="img/telegram.png" alt="telegram"></a>
+            <a class="contacts__social-link" href="#"><img class="viber" src="img/viber.png" alt="viber"></a>
+            <a class="contacts__social-link" href="#"><img class="whatsapp" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a class="contacts__phone" href="tel:+380981884400">+380 (98) 188-44-00</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="adv">
+      <div class="container">
+        <h3 class="adv__title">Переваги нашого магазину</h3>
+        <div class="adv__inner">
+          <div class="adv__item">
+            <div class="adv__block-img">
+              <img class="adv__img" src="img/like.png" alt="">
+            </div>
+            <p class="adv__text">
+              Успішно працюємо на ринку України вже понад 8 років
+            </p>
+          </div>
+          <div class="adv__item">
+            <div class="adv__block-img">
+              <img class="adv__img" src="img/fast-delivery.png" alt="">
+            </div>
+            <p class="adv__text">
+              Доставляємо нашу продукцію по всьому світу
+            </p>
+          </div>
+          <div class="adv__item">
+            <div class="adv__block-img">
+              <img class="adv__img" src="img/needle.png" alt="">
+            </div>
+            <p class="adv__text">
+              Унікальна технологія виробництва костюмів та аксесуарів для дорослих
+            </p>
+          </div>
+          <div class="adv__item">
+            <div class="adv__block-img">
+              <img class="adv__img" src="img/happy.png" alt="">
+            </div>
+            <p class="adv__text">
+              Залишили задоволеними понад 10 тис. клієнтів, більшість з яких стали нашими постійними
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</promhtml>

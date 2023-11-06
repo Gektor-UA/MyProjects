@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Agio</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="video">
+        <img
+          class="video__media"
+          src="images/background-animation.gif"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <div class="header__inner">
+          <!-- Мобільне меню -->
+          <div class="mobile-menu" id="mobileMenu">
+            <div class="close-icon" onclick="toggleMobileMenu()"></div>
+            <a href="#">Главная</a>
+            <a href="#">Партнерам</a>
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+            <!-- <a href="#"
+              >Eng <img class="second-menu-img" src="images/Polygon 2.svg"/>
+          </a> -->
+          </div>
+          <div class="header__top">
+            <nav class="header__menu">
+              <button class="menu" onclick="toggleMobileMenu()">
+                <svg viewBox="0 0 64 48">
+                  <path
+                    d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"
+                  ></path>
+                  <path
+                    d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"
+                  ></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg>
+              </button>
+
+              <!-- <div class="container"> -->
+              <a class="logo__mobile-menu" href="#">
+                <img src="images/logo.svg" />
+              </a>
+              <div class="header__menu-list">
+                <div class="first__menu">
+                  <a href="#">
+                    <img src="images/logo.svg" />
+                  </a>
+
+                  <a class="menu-item">Главная</a>
+                  <a class="menu-item">Партнерам</a>
+                </div>
+                <div class="second__menu">
+                  <div class="menu-item menu-log-in">Регистрация</div>
+                  <div class="menu-item menu-sign-in">Вход</div>
+                  <!-- <div class="menu-item menu-language">
+                    Eng
+                    <img class="second-menu-img" src="images/Polygon 2.svg" />
+                  </div> -->
+                </div>
+              </div>
+              <!-- </div> -->
+            </nav>
+          </div>
+
+          <div class="header__content">
+            <div class="container">
+              <div class="header__block">
+                <div class="block__text">
+                  <!-- Elevate Your<br> Finances with <br> -->
+                  <p class="special__text" id="crypto-text--one">
+                    Рост и продвижение
+                  </p>
+                  <p class="special__text" id="crypto-text--two">
+                    в <span>Telegram:</span>
+                  </p>
+                  <div class="special__text--three" id="crypto-text">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="button__container">
+                  <a class="block__first-btn" href="#">Узнать больше</a>
+                  <a class="block__second-btn" href="#">Связаться с нами</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="platform">
+        <div class="container">
+          <div class="platform__inner">
+            <div class="platform__top">
+              <h3 class="platform__top-title">VTELEGRAMIX</h3>
+              <p class="platform__top-text">
+                "Привлечь аудиторию в <span>Telegram</span>? Это наше дело, и мы
+                здесь, чтобы помочь!"
+              </p>
+              <div class="platform__top-statistic">
+                <div class="platform__top-statistic-item">
+                  <div class="platform__top-animated-text">
+                    <span id="animated-text1">10</span><span>+</span>
+                  </div>
+                  <p class="platform__top-statistic-text">месяцов опыта</p>
+                </div>
+
+                <div class="platform__top-statistic-item">
+                  <div class="platform__top-animated-text">
+                    <span id="animated-text">40 000</span><span>+</span>
+                  </div>
+                  <p class="platform__top-statistic-text">
+                    Успешных телеграм каналов
+                  </p>
+                </div>
+
+                <div class="platform__top-statistic-item">
+                  <div class="platform__top-animated-text">
+                    <span id="animated-text2">500+</span><span>+</span>
+                  </div>
+                  <p class="platform__top-statistic-text">
+                    больше 500 крупных инвесторов
+                  </p>
+                </div>
+              </div>
+              <a class="platform__top-link">
+                Узнайте больше
+                <img src="images/Arrow-btn.svg" alt="Arrow-btn" />
+              </a>
+            </div>
+
+            <div class="platform__quote">
+              <h3 class="platform__quote-title">
+                "Раскроем потенциал вашего <span>Telegram-канала</span>, принося
+                вам массу подписчиков!"
+              </h3>
+            </div>
+
+            <div class="platform__about">
+              <div class="container">
+                <h4 class="platform__about-title">
+                  Что мы делаем<span>?</span>
+                </h4>
+                <div class="platform__about-inner">
+                  <div class="platform__about-item">
+                    <h6 class="platform__about-itemTitle">Приток трафика</h6>
+                    <p class="platform__about-itemText">
+                      Мы приведем высокий поток живой аудитории на ваш
+                      <span>Telegram-канал</span> с помощью арбитража трафика по
+                      самым выгодным ценам.
+                    </p>
+                  </div>
+                  <div class="platform__about-item">
+                    <h6 class="platform__about-itemTitle">Продаж ТГ каналов</h6>
+                    <p class="platform__about-itemText">
+                      Здесь вы сможете приобрести уникальные
+                      <span>Telegram – каналы</span>, по оптимальным ценам с
+                      высокой активностью, который будет приносить постоянную
+                      прибыль своему владельцу
+                    </p>
+                  </div>
+                  <div class="platform__about-item">
+                    <h6 class="platform__about-itemTitle">Выкуп ТГ каналов</h6>
+                    <p class="platform__about-itemText">
+                      Если ваш канал не дает желаемого результата, мы можем
+                      помочь с его продвижением или выкупить его по
+                      <span>договорной цене</span>, которая точно вам подойдет.
+                    </p>
+                  </div>
+                  <div class="platform__about-item">
+                    <h6 class="platform__about-itemTitle">Реклама в ТГ</h6>
+                    <p class="platform__about-itemText">
+                      О вашем продукте узнают. Мы предлагаем
+                      <span>размещение рекламы</span> на наших телеграммах
+                      каналах, с прогнозируемыми результатами сформированными
+                      относительно большого опыта.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="who_we_are">
+        <div class="container">
+          <div class="who_we_are_inner">
+            <h3 class="who_we_are_title">Кто мы<span>?</span></h3>
+            <div class="who_we_are_logo_container">
+              <img src="images/logo1.svg" class="who_we_are_logo"></img>
+              <div class="who_we_are_text">
+                <span>VTelegramix</span> — это сервис, в котором собраны всевозможные сервисы, 
+                которые выведут ваш канал на совершенно новый уровень .
+              </div>
+            </div>
+            <div class="who_we_are_people_container">
+              <div class="who_we_are_text_container">
+                  <div class="who_we_are_people_text">
+                      Специалисты <span>VTelegramix</span> учились у таких известных наставников как Александр Слобоженко и Азир Годжатов, 
+                      большинство работали в Traffic Devils и других не менее известных компаниях.
+                  </div>
+                  <div class="who_we_are_people_text">
+                    Мы профессионалы своего дела и имеем огромный опыт в <span>Telegram</span> – бизнесе.
+                </div>
+                <div class="who_we_are_people_text">
+                  Мы как никто знаем, как привлечь целевую аудиторию,
+                   увеличить количество подписчиков и укрепить ваше влияние в мире <span>Telegram</span>.
+              </div>
+              </div>
+              <img src="images/people.png" class="who_we_are_img"/>
+              <img class="plane who_we_are_plane" src="images/plane.svg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why_telegram">
+        <div class="container">
+          <div class="why_telegram_inner">
+            <h3 class="why_telegram_title">Почему именно <span>Telegram?</span></h3>
+            <div class="why_telegram_description">
+              <div class="why_telegram_text">
+                <span>Telegram</span> - это идеальная ниша для вашего бизнеса или канала. 
+                С более чем 500 миллионами активных пользователей по всему миру, 
+                вы получаете огромную аудиторию для продвижения. Эти цифры только растут!
+              </div>
+              <img class="why_telegram_img" src="images/telegram.svg" alt="why_telegram_img">
+            </div>
+            <div class="why_telegram_graphic">
+              <div class="why_telegram_years">
+                <div class="why_telegram_year">2005</div>
+                <div class="why_telegram_year">2008</div>
+                <div class="why_telegram_year">2012</div>
+                <div class="why_telegram_year">2018</div>
+                <div class="why_telegram_year">2023</div>
+              </div>
+              <div class="why_telegram_graphic_container">
+                <div class="why_telegram_graphic_bg"></div>
+                  <div class="why_telegram_graphic_scale">
+                    <div class="why_telegram_graphic_bar_one why_telegram_graphic_bar"></div>
+                    <div class="why_telegram_graphic_percent_one">71%</div>
+                  </div>
+                  <div class="why_telegram_graphic_scale ">
+                    <div class="why_telegram_graphic_bar_two why_telegram_graphic_bar"></div>
+                    <div class="why_telegram_graphic_percent">83%</div>
+                  </div>
+                  <div class="why_telegram_graphic_scale ">
+                    <div class="why_telegram_graphic_bar_three why_telegram_graphic_bar"></div>
+                    <div class="why_telegram_graphic_percent">52%</div>
+                  </div>
+                  <div class="why_telegram_graphic_scale ">
+                    <div class="why_telegram_graphic_bar_four why_telegram_graphic_bar"></div>
+                    <div class="why_telegram_graphic_percent">91%</div>
+                  </div>
+              </div>
+              <div class="why_telegram_statistic">
+                <div class="why_telegram_statistic_item_one why_telegram_statistic_item">
+                  <div class="why_telegram_statistic_dot"></div>
+                  <div class="why_telegram_statistic_text">Ежемесячное время проведенное в телеграм</div>
+                  <div class="why_telegram_statistic_percent">71.57%</div>
+                </div>
+                <div class="why_telegram_statistic_item_two why_telegram_statistic_item">
+                  <div class="why_telegram_statistic_dot"></div>
+                  <div class="why_telegram_statistic_text">Увеличение ежедневной активности</div>
+                  <div class="why_telegram_statistic_percent">83.25%</div>
+                </div>
+                <div class="why_telegram_statistic_item_three why_telegram_statistic_item">
+                  <div class="why_telegram_statistic_dot"></div>
+                  <div class="why_telegram_statistic_text">Увеличение мирового охвата</div>
+                  <div class="why_telegram_statistic_percent">52.95%</div>
+                </div>
+                <div class="why_telegram_statistic_item_four why_telegram_statistic_item">
+                  <div class="why_telegram_statistic_dot"></div>
+                  <div class="why_telegram_statistic_text">Ежемесячное время проведенное в телеграм</div>
+                  <div class="why_telegram_statistic_percent">91.29%</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="choose">
+        <div class="container">
+          <h3 class="choose__title">Почему вы должны выбрать  <span>VTELEGRAMIX?</span></h3>
+          <div class="choose__inner">
+            <div class="choose__item choose__item--one">
+              <a>
+                <div class="content-inner fl-wrap">
+                  <div class="content-front">
+                    <div class="cf-inner">
+                      <div class="bg"></div>
+                      <div class="overlay"></div>
+                      <div class="inner">
+                        <h2><img src="images/telegram-icon.svg" /></h2>
+                        <ul class="choose_text">
+                          <li>Актуальные</li>
+                          <li>цены</li>
+                          <li>на рекламу</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-back">
+                    <div class="cf-inner back-card">
+                      <div class="inner">
+                        <div class="dec-icon">
+                          <img src="images/telegram-icon.svg" />
+                        </div>
+                        <p>
+                          Benefit from our team's deep knowledge and experience
+                          in the cryptocurrency industry, guiding you towards
+                          informed decisions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="choose__item choose__item--two">
+              <a>
+                <div class="content-inner fl-wrap">
+                  <div class="content-front">
+                    <div class="cf-inner">
+                      <div class="bg"></div>
+                      <div class="overlay"></div>
+                      <div class="inner">
+                        <h2><img src="images/tab.svg" /></h2>
+                        <ul class="choose_text">
+                          <li>Уникальный</li>
+                          <li>контент</li>        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-back">
+                    <div class="cf-inner back-card">
+                      <div class="inner">
+                        <div class="dec-icon">
+                          <img src="images/tab.svg" />
+                        </div>
+                        <p>
+                          Benefit from our team's deep knowledge and experience
+                          in the cryptocurrency industry, guiding you towards
+                          informed decisions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="choose__item choose__item--three">
+              <a>
+                <div class="content-inner fl-wrap">
+                  <div class="content-front">
+                    <div class="cf-inner">
+                      <div class="bg"></div>
+                      <div class="overlay"></div>
+                      <div class="inner">
+                        <h2 class="choose_text"><img src="images/group-icon.svg" /></h2>
+                        <ul>
+                          <li>Трафик</li>
+                          <li>живой</li>
+                          <li>аудитории</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-back">
+                    <div class="cf-inner back-card">
+                      <div class="inner">
+                        <div class="dec-icon">
+                          <img src="images/group-icon.svg" />
+                        </div>
+                        <p>
+                          Benefit from our team's deep knowledge and experience
+                          in the cryptocurrency industry, guiding you towards
+                          informed decisions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="choose__item choose__item--four">
+              <a>
+                <div class="content-inner fl-wrap">
+                  <div class="content-front">
+                    <div class="cf-inner">
+                      <div class="bg"></div>
+                      <div class="overlay"></div>
+                      <div class="inner">
+                        <h2><img src="images/mark.svg" /></h2>
+                        <ul class="choose_text">
+                          <li>Конкретные</li>
+                          <li>гарантии</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-back">
+                    <div class="cf-inner back-card">
+                      <div class="inner">
+                        <div class="dec-icon">
+                          <img src="images/mark.svg" />
+                        </div>
+                        <p>
+                          Benefit from our team's deep knowledge and experience
+                          in the cryptocurrency industry, guiding you towards
+                          informed decisions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <img class="choose__bg" src="images/choose-bg.png" alt="choose-bg" />
+          <img class="plane choose_plane " src="images/plane_two.svg" alt="">
+          
+        </div>
+        <div class="choose__btn">Связаться с нами</div>
+      </section>
+      <section class="advertising">
+        <div class="container">
+          <div class="advertising_inner">
+            <h3 class="advertising_title"><span>TELEGRAMIX</span> - решение ваших проблем с рекламой </h3>
+            <div class="advertising_list_container">
+              <div class="advertising_list">
+                <div class="advertising_list_item">
+                  <div class="advertising_list_num">1.</div>
+                  <div class="advertising_list_text">Устали от искусственной аудитории? Мы обеспечим вас живым, 
+                    активным сообществом!</div>
+                </div>
+                <div class="advertising_list_item">
+                  <div class="advertising_list_num">2.</div>
+                  <div class="advertising_list_text">Слишком высокие цены на рекламу? С нами вы
+                     получите оптимальное соотношение цены и качества!</div>
+                </div>
+                <div class="advertising_list_item">
+                  <div class="advertising_list_num">3.</div>
+                  <div class="advertising_list_text">Не доверяете пустым обещаниям ? 
+                    Мы предоставляем конкретные гарантии и ориентированные на результаты от рекламы!</div>
+                </div>
+                <div class="advertising_list_item">
+                  <div class="advertising_list_num">4.</div>
+                  <div class="advertising_list_text">Надоел скучный контент?<span>Telegramix</span>  всегда предлагает что-то свежее и уникальное!
+                    Выберите качество, выберите <span>Telegramix</span>!"</div>
+                </div>
+                
+              </div>
+              <img class="advertising_img" src="images/phone.svg" alt="advertising_img">
+            </div>
+           
+          </div>
+        </div>
+      </section>
+      <section class="partners_system">
+        <div class="container">
+          <div class="partners_system_inner">
+            <h3 class="partners_system_title"> Партнерская система <span>VTELEGRAMIX</span></h3>
+            <div class="partners_system_content">
+                <img class="partners_system_img" src="images/partners (2).png" alt="partners.png">
+              <div class="partners_system_text">Мы научились зарабатывать в телеграм и 
+                готовы поделиться опытом.</div>
+            </div>
+            <div class="partners_system_service">
+              <div class="partners_system_service_text">
+                Наш сервис предоставляет уникальные возможности для взаимодействия с нами, 
+                обеспечивая трем основным группам лиц следующие направления:
+              </div>
+              <div class="partners_system_service_buttons">
+                <div class="partners_system_service_button">Инвестор</div>
+                <div class="partners_system_service_button">Партнер</div>
+                <div class="partners_system_service_button">Владелец</div>
+              </div>
+              <div class="partners_system_service_text">
+                Стать нашим партнером - это выгодно и перспективно, особенно если вас интересуют темы инвестиций, 
+                реферральных программ, арбитража, раскрутки <span>Telegram</span>-каналов и рекламы.
+                 Мы предоставляем ресурсы и поддержку для вашего успеха в этих областях.
+              </div>
+
+              <div class="partners_system_service_under_button">Узнать больше</div>
+            </div>
+            <img class="plane partners_system_plane " src="images/plane_three.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      
+        <div class="footer_menu">
+          
+          <img class="footer_logo" src="images/footer_logo.svg" alt="footer_logo">
+          
+          <div class="footer_menu_list">
+            <a class="footer_menu_item" href="#">Главная</a>
+            <a class="footer_menu_item" href="#">Партнерам</a>
+          </div>
+  
+         
+        </div>
+        <div class="footer_text_logo">VTELEGRAMIX 2023</div>
+        <button class="menu_footer" onclick="toggleFooterMenu(event)">
+          <svg viewBox="0 0 64 48">
+            <path
+              d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"
+            ></path>
+            <path
+              d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"
+            ></path>
+            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+          </svg>
+        </button>
+         <div class="footer-menu" id="footerMenu">
+            <ul>
+              <li><a class="footer_menu_item" href="#">Главная</a></li>
+              <li><a class="footer_menu_item" href="#">Партнерам</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

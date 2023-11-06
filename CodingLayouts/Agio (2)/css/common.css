@@ -1,0 +1,50 @@
+body {
+  font-family: "Neue Machina-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 109%;
+  /* 17.44px */
+  letter-spacing: 0.96px;
+  color: #000;
+}
+
+.container {
+  max-width: 1265px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Neue Machina-Ultrabold';
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2.88px;
+  line-height: 109%;
+  color: var(--dark, #050505);
+}
+
+h6 {
+  font-family: 'Neue Machina-Bold';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 109%;
+  /* 26.16px */
+  letter-spacing: 1.44px;
+}
+
+/* *Для відео */
+.video {
+  position: relative;
+}
+.video__media {
+  position: absolute;
+  width: 100%;
+  /* min-width: 1600px; */
+  top: 0;
+  left: 0;
+  height: auto;
+}
