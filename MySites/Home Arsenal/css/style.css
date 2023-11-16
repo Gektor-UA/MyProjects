@@ -49,6 +49,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 70px;
+  text-align: center;
+}
+.footer__left-link--conf {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #faf6f2;
 }
 .footer__left-link {
   font-weight: 500;
@@ -134,3 +141,44 @@ body {
   left: 0;
 }
 /** ==== END FOOTER ==== */
+
+
+
+/*! === АДАПТИВ === */
+@media (max-width: 1100px) {
+  .footer{
+    padding: 70px 0;
+  }
+  .footer__inner {
+    display: block;
+  }
+  .footer__left {
+    border-bottom: 1px solid #524336;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    justify-content: start;
+  }
+  .footer__right::before {
+    display: none;
+  }
+}
+
+@media (max-width: 625px) {
+  .footer__left {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__left-box {
+    margin-right: 0;
+  }
+  .footer__left-link--conf {
+    display: none;
+  }
+  .footer__left-list {
+    text-align: center;
+  }
+  .footer__right-box {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
