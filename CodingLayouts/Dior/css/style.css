@@ -1,0 +1,30 @@
+.header {}
+.header__inner {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.logo {}
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.menu {
+  margin: 0 186px 0 131px;
+}
+.menu__list {}
+.menu__item {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.menu__link {}
+.user-nav {
+  display: flex;
+  gap: 0 20px;
+}
+.user-nav__item {}
+.user-nav__link {}
