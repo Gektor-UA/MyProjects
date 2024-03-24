@@ -1,11 +1,12 @@
-.header {}
+.header {
+  margin-bottom: 100px;
+}
 .header__inner {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.logo {}
 .header__title {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -15,16 +16,84 @@
 .menu {
   margin: 0 186px 0 131px;
 }
-.menu__list {}
 .menu__item {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.menu__link {}
 .user-nav {
   display: flex;
   gap: 0 20px;
 }
-.user-nav__item {}
-.user-nav__link {}
+
+/** === TOP === */
+.top {
+  margin-bottom: 150px;
+}
+.top-slide {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.top-slide__inner {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-slide__content {
+  flex-basis: 183px;
+  margin-top: -140px;
+}
+.top-slide__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 70px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  margin-bottom: 56px;
+}
+.top-slide__subtitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.top-slide__text {
+  margin-bottom: 20px;
+}
+.top-slide__btn {
+  display: inline-block;
+  padding: 21px 55px;
+  border: 1px solid #7449bb;
+  color: #7449bb;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: auto;
+  transition: all 0.5s;
+}
+.top-slide__btn:hover {
+  background-color: #7449bb;
+  color: #fff;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 51px;
+  height: 16px;
+}
+.container-arrows {
+  position: relative;
+  padding: 0;
+  max-width: 1200px;
+}
+.top .swiper {
+  padding-bottom: 50px;
+}
+.swiper-button-next {
+  left: 75px;
+  right: auto;
+}
+/** === END TOP === */
