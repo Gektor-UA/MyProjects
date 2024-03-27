@@ -106,7 +106,7 @@
 
 /** === ABOUT === */
 .about {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 .about__inner {
@@ -143,7 +143,7 @@
   margin-bottom: 20px;
 }
 .about__slider {
-  width: 1600px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
@@ -153,3 +153,66 @@
   margin-top: 15px;
 }
 /** === END ABOUT === */
+
+/** === ACCORDEON === */
+.accordeon {
+  margin-bottom: 223px;
+}
+.accordeon__inner {
+  padding-left: 200px;
+}
+.accordeon__item {
+  border-bottom: 1px solid #000;
+  padding: 0 100px 0 0;
+  position: relative;
+}
+.accordeon__item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  background-image: url(../images/big-arrow.svg);
+  right: 85px;
+  top: 50px;
+}
+.accordeon__item:last-child::after { 
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 120px;
+  background-image: url(../images/accrdeon-img.jpg);
+  left: 268px;
+  bottom: -73px;
+}
+.accordeon__item--active .accordeon__content {
+  display: block;
+}
+.accordeon__triger {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordeon__triger-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  flex-basis: 300px;
+  padding-bottom: 42px;
+} 
+.accordeon__triger-text {
+  flex-basis: 387px;
+  margin-right: 104px;
+  padding-bottom: 20px;
+}
+.accordeon__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+.accordeon__content p + p {
+  margin-top: 10px;
+}
+.accordeon__content--active {
+  display: block;
+}
+/** === END ACCORDEON === */
