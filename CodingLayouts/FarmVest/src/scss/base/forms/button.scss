@@ -2,13 +2,38 @@
 // Сніппет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: math.div(22 , 18);
+  display: inline-block;
+	background-color: #23B123;
+  border-radius: toRem(10);
+	padding: toRem(21) toRem(25);
+  transition: all 0.3s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
+      background-color: #1f691f;
 		}
 	}
+  &--border {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: toRem(20) toRem(25);
+    
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 	&--fw {
 		width: 100%;
 	}
+  @media (max-width:$tablet){
+    padding: toRem(15) toRem(20);
+    &--border {
+      padding: toRem(14) toRem(20);
+    }
+  }
 }

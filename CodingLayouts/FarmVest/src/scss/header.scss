@@ -1,0 +1,52 @@
+.header {
+  @include adaptiveValue("padding-top", 60, 10);
+  @include adaptiveValue("padding-bottom", 60, 10);
+  // .header__container-big
+  &__container-big {
+    display: flex;
+    align-items: center;
+  }
+  // .header__logo
+  &__logo {
+    position: relative;
+    z-index: 5;
+    img {
+      @include adaptiveValue("width", 143, 120, 3, 1620, 768);
+    }
+  }
+  // .header__menu
+  &__menu {
+    flex: 1 1 auto;
+  }
+  // .header__actions
+  &__actions {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: toRem(16);
+    align-items: center;
+  }
+  // .header__button
+  &__button {
+  }
+}
+.menu {
+  // .menu__icon
+  &__icon {
+  }
+  // .menu__body
+  &__body {
+  }
+  // .menu__list
+  &__list {
+
+  }
+  // .menu__item
+  &__item {
+  }
+  // .menu__link
+  &__link {
+  }
+}
+.icon-menu {
+}
