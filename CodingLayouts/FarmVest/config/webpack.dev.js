@@ -57,11 +57,11 @@ const config = {
 
 		// Розкоментувати на слабкому ПК
 		// (в режимі розробника папка результатом (dist) буде створюватися на диску)
-		/*
+		
 		devMiddleware: {
 			writeToDisk: true,
 		},
-		*/
+		
 
 		watchFiles: [
 			`${paths.src}/**/*.html`,

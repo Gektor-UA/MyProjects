@@ -1,10 +1,25 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
   @include adaptiveValue("padding-top", 60, 10);
   @include adaptiveValue("padding-bottom", 60, 10);
+  transition: all 0.3s ease 0s;
+  &._header-scroll {
+    padding-top: toRem(20);
+    padding-bottom: toRem(20);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
   // .header__container-big
   &__container-big {
-    display: flex;
+    display: grid;
+    grid-template-columns: toRem(300) 1fr toRem(300);
     align-items: center;
+    @media (max-width: toEm(1080)) {
+      grid-template-columns: auto 1fr auto;
+    }
   }
   // .header__logo
   &__logo {
@@ -16,7 +31,6 @@
   }
   // .header__menu
   &__menu {
-    flex: 1 1 auto;
   }
   // .header__actions
   &__actions {
@@ -29,24 +43,4 @@
   // .header__button
   &__button {
   }
-}
-.menu {
-  // .menu__icon
-  &__icon {
-  }
-  // .menu__body
-  &__body {
-  }
-  // .menu__list
-  &__list {
-
-  }
-  // .menu__item
-  &__item {
-  }
-  // .menu__link
-  &__link {
-  }
-}
-.icon-menu {
 }

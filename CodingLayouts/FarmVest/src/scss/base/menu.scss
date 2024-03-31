@@ -58,13 +58,15 @@
   }
   // .menu__link
   &__link {
-    transition: all 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
     @media (max-width: $mobile) {
       font-size: toRem(32);
     }
-  }
-  &__link:hover {
-    text-decoration: underline;
+    @media (any-hover: hover){
+      &:hover{
+        color: $greenColor;
+      }
+    }
   }
 }
 
