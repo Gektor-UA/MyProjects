@@ -1,19 +1,84 @@
 // Заголовки, загальні БЕМ блоки та інше...
 .page {
   // .page__main
-  &__main {}
-    // .page__partners
-  &__partners {}
+  &__main {
+  }
+  // .page__partners
+  &__partners {
+  }
+  // .page__how
+  &__how {
+  }
 }
 //========================================================================================================================================================
 .title {
   font-weight: 700;
   font-size: toRem(70);
-  line-height: math.div(78 , 70);
+  line-height: math.div(78, 70);
+  color: #ffffff;
   @include adaptiveValue("font-size", 70, 45);
-  color: #FFFFFF;
+  &--s64 {
+    @include adaptiveValue("font-size", 64, 40);
+  }
   span {
     color: $greenColor;
+  }
+}
+//========================================================================================================================================================
+.text {
+  line-height: 180%;
+}
+//========================================================================================================================================================
+.image-block {
+  overflow: hidden;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: toRem(20);
+  @include adaptiveValue("padding-top", 165, 30);
+  @include adaptiveValue("padding-bottom", 165, 30);
+  @include adaptiveValue("padding-left", 45, 30);
+  @include adaptiveValue("padding-right", 45, 30);
+  position: relative;
+  // .image-block__circle
+  &__circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      @include adaptiveValue("width", 585, 300);
+      @include adaptiveValue("height", 585, 300);
+      top: 0;
+      right: 0;
+    }
+    // .image-block__circle_1
+    &_1 {
+      &::before {
+        transform: translate(calc(50% - toRem(17)), -20%);
+      }
+    }
+    // .image-block__circle_2
+    &_2 {
+      &::before {
+        transform: translate(calc(50% - toRem(17)), -6%);
+      }
+    }
+  }
+  // .image-block__item
+  &__item {
+    text-align: center;
+    flex: 1 1 100%;
+    position: relative;
+    z-index: 2;
+    img {
+      max-width: 100%;
+      border-radius: toRem(20);
+    }
   }
 }
 //========================================================================================================================================================
