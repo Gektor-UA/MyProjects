@@ -124,3 +124,23 @@
   }
 }
 //====================================================================================================
+.partners {
+  @include adaptiveValue("padding-bottom", 200, 30);
+  // .partners__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: toRem(25);
+    flex-wrap: wrap;
+    @media (max-width: toEm(1100)){
+      justify-content: center;
+    }
+  }
+  // .partners__item
+  &__item {
+    img {
+      max-width: 100%;
+    }
+  }
+}
